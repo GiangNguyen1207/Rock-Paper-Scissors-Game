@@ -3,7 +3,9 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0
 }
 
@@ -20,12 +22,36 @@ h1, h2, h3 {
   justify-content: space-evenly;
 }
 
-.restart {
-  margin: 0 auto;
-  width: 20%;
+.intro {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: opacity 0.5s ease;
 }
 
-.players, .images, .options {
+.intro h1 {
+  font-size: 36px;
+}
+
+.game {
+  position: fixed;
+  width: 70%;
+  height: 70%;
+  top: 15%;
+  bottom: 15%;
+  left: 15%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: opacity 0.5s ease 0.5s;
+}
+
+.players,
+.images,
+.options {
   display: flex;
   justify-content: space-around;
 }
@@ -34,38 +60,16 @@ h1, h2, h3 {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 3px;
-  padding-bottom: 20px;
 }
 
 .players p {
   margin: 0;
   font-size: 24px;
-  text-align: center;
   padding: 10px;
-}
-
-.game {
-  position: fixed;
-  width: 70%;
-  height: 50%;
-  top: 35%;
-  left: 15%;
-  text-align: center;
-  transition: opacity 0.5s ease 0.5s;
-}
-
-.intro {
-  display: flex;
-  height: 50%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  transition: opacity 0.5s ease;
 }
 
 .title {
   font-weight: 400;
-  margin: 20px auto
 }
 
 .player-hand {
@@ -88,6 +92,12 @@ button {
 
 button:focus {
   outline: none;
+}
+
+
+#restart {
+  margin: 0 auto;
+  width: 20%;
 }
 
 .hide {

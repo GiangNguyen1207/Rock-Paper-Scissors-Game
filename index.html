@@ -1,45 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-  <title>Rock Paper Scissors game</title>
-</head>
-<body>
-  <section>
-    <div class="game-board">
-      <button class="restart">Restart</button>
-      <div class="players">
-        <div class="player">
-          <h2>Player</h2>
-          <p>0</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rock Paper Scissors game</title>
+  </head>
+  <body>
+    <section>
+      <div class="game-board">
+        <div class="intro">
+          <h1>Rock Paper and Scissors Game</h1>
+          <button id="play">Let's play</button>
         </div>
-        <div class="computer">
-          <h2>Computer</h2>
-          <p>0</p>
+        <div class="game hide">
+          <button id="restart">Restart</button>
+          <div class="players">
+            <div class="player">
+              <h2>Player</h2>
+              <p>0</p>
+            </div>
+            <div class="computer">
+              <h2>Computer</h2>
+              <p>0</p>
+            </div>
+          </div>
+          <h3 class="title">Choose an option</h3>
+          <div class="images">
+            <img
+              src="./images/rock.png"
+              alt="player-hand"
+              class="player-hand"
+            />
+            <img
+              src="./images/rock.png"
+              alt="computer-hand"
+              class="computer-hand"
+            />
+          </div>
+          <div class="options">
+            <button class="rock">rock</button>
+            <button class="scissors">scissors</button>
+            <button class="paper">paper</button>
+          </div>
         </div>
       </div>
-      <div class="intro">
-        <h1>Rock Paper and Scissors Game</h1>
-        <button class="play-button">Let's play</button>
-      </div>
-      <div class='game hide'>
-        <h3 class="title">Choose an option</h3>
-        <div class="images">
-          <img src="./images/rock.png" alt='player-hand' class="player-hand"/>
-          <img src="./images/rock.png" alt='computer-hand' class="computer-hand"/>
-        </div>
-        <div class="options">
-          <button class="rock">rock</button>
-          <button class="scissors">scissors</button>
-          <button class="paper">paper</button>
-        </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="app.js"></script>
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
